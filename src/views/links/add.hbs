@@ -1,0 +1,26 @@
+<div class="container p-4">
+    <div class="row">
+        <div class="col-md-4 mx-auto">
+            <div class="card">
+                <div class="card-body">
+                    <form action="/links/add" method="POST">
+                        <div class="form-group margin-bottom">
+                            <input type="text" class="form-control" name="title" placeholder="Title" autofocus>
+                        </div>
+                        <div class="form-group margin-bottom">
+                            <input type="url" name="url" class="form-control" placeholder="Url">
+                        </div>
+                        <div class="form-group margin-bottom">
+                            <textarea name="description" rows="2" class="form-control" placeholder="Description"></textarea>
+                        </div>
+                        <div class="form-group margin-bottom">
+                            <button class="btn btn-success col-12">
+                                Save
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
