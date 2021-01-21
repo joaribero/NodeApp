@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top px-3">
   <div class="container-fluid">
     <a class="navbar-brand" href="/">Favorite Links</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -6,9 +6,9 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
+      <ul class="navbar-nav ml-auto px-4">
         {{#if user}}
-          <li class="nav-item dropdown">
+        <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
             Links
@@ -19,21 +19,24 @@
             <a class="dropdown-item" href="/links/add">Add new link</a>
           </div>
         </li>
-        <li class="nav-item">
-          <a href="/profile" class="nav-link">Profile</a>
-        </li>
-        <li class="nav-item">
-          <a href="/logout" class="nav-link">Logout</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            {{user.username}}
+            <img src="/img/Logo.jpg" width="30" height="30" class="d-inline-block align-top">
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="/profile">Your profile</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="/logout">Log Out</a>
+          </div>
         </li>
         {{else}}
         <li class="nav-item">
-          <a href="/signin" class="nav-link"> SignIn</a>
-        </li>
-        <li class="nav-item">
-          <a href="/signup" class="nav-link"> SignUp</a>
+          <a href="/signin" class="nav-link"> Log In</a>
         </li>
         {{/if}}
-        
+
       </ul>
     </div>
   </div>
