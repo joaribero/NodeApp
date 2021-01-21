@@ -19,7 +19,7 @@ body {
     width: 100%;
     height: 100%;
     padding-top: 8rem;
-    background: url('/img/background.jpg');
+    background: url('/img/background1.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -30,6 +30,7 @@ body {
     margin: 0;
     padding: 0;
 }
+
 
 @media (min-width: 992px) {
     .masthead h1 {
