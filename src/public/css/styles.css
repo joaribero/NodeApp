@@ -3,9 +3,9 @@
 }
 
 body {
-    background: #f5f6f5;
+    background: #ecf0f1;
     font-family: 'Oswald', sans-serif;
-    overflow: hidden;
+    overflow: auto;
 }
 
 .index {
@@ -36,4 +36,32 @@ body {
     .masthead h1 {
         font-size: 5.5rem;
     }
+}
+
+.container-custom{
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+.container-custom .card-custom {
+    width: 330px;
+    height: 300px;
+    border-radius: 8px;
+    box-shadow: 0 2px rgba(0,0,0,0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+    background-color: white;
+    opacity: 1;
+}
+
+.container-custom .card-custom:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0,0,0,0.2);
 }
